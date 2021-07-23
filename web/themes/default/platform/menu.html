@@ -271,12 +271,11 @@
 											<input id="radio-1" type="radio" name="ipt" ng-checked="context.activeItem.type == 'media_id' || context.activeItem.type == 'click'" ng-model="context.activeItem.type" value="click" ng-disabled="context.group.disabled">
 											<label for="radio-1">发送消息 </label>
 											<input id="radio-2" type="radio" name="ipt" ng-model="context.activeItem.type" value="view" ng-disabled="context.group.disabled">
-											{if $_W['account']['level'] != ACCOUNT_SUBSCRIPTION}
 											<label for="radio-2">跳转网页 </label>
+											{if $_W['account']['level'] != ACCOUNT_SUBSCRIPTION}
 											<input id="radio-3" type="radio" name="ipt" ng-model="context.activeItem.type" value="scancode_push" ng-disabled="context.group.disabled">
-											{/if}
-
 											<label for="radio-3">扫码 </label>
+											{/if}
 											<input id="radio-4" type="radio" name="ipt" ng-model="context.activeItem.type" value="scancode_waitmsg" ng-disabled="context.group.disabled">
 											<label for="radio-4">扫码（等待信息） </label>
 											<input id="radio-5" type="radio" name="ipt" ng-model="context.activeItem.type" value="location_select" ng-disabled="context.group.disabled">
